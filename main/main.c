@@ -53,13 +53,12 @@ int main() {
 
 
     while (true) {
-        int i=0;
 
         if(!gpio_get(PIN_BOTAO)){
             gpio_put(PIN_LED,1);
             sleep_ms(100);
             
-            for (i = 0; i < 512; i++)
+            for (int i = 0; i < 512; i++)
             {
             int sono = 10;
            
